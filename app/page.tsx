@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import { Nunito_Sans } from "next/font/google";
 import Link from "next/link";
 
