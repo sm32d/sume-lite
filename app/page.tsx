@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Nunito_Sans } from "next/font/google";
+import Link from "next/link";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
@@ -12,8 +13,15 @@ const Home = () => {
       >
         <h1 className="text-4xl text-stone-700">Hello! Dominik here.</h1>
         <p className="py-2 text-3xl md:text-4xl text-stone-600 leading-snug">
-          I'm a Software Engineer based in Singapore. Currently with Ufinity -
-          working to make lives easier.
+          I'm a Software Engineer based in Singapore. Currently with{" "}
+          <Link
+            className="underline"
+            href="https://ufinity.com"
+            target="_blank"
+          >
+            Ufinity
+          </Link>{" "}
+          - working to make lives easier.
         </p>
       </main>
       <Footer />
